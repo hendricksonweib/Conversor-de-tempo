@@ -2,6 +2,7 @@ const inputTime = document.getElementById("inputTime")
 const convertButton = document.getElementById("convert")
 const SelectTimeNow = document.getElementById("tempo")
 const SelectTimeBefore = document.getElementById("conversor")
+const resultElement = document.getElementById("result")
 
 convertButton.addEventListener("click", function () {
     const timeValue = inputTime.value
@@ -12,55 +13,52 @@ convertButton.addEventListener("click", function () {
 
     switch (valores) {
         case "segundossegundos":
-            console.log(timeValue)
+            resultElement.textContent = timeValue
             break;
         case "segundosminutos":
-            console.log(timeValue / 60)
+            resultElement.textContent = timeValue / 60
             break;
         case "segundoshoras":
-            console.log(Math.round(timeValue / 3600))
+            resultElement.textContent = Math.round(timeValue / 3600)
             break;
         case "segundosdias":
-            console.log(Math.round(timeValue / 86400))
+            resultElement.textContent = Math.round(timeValue / 86400)
             break;
-
         case "minutosminutos":
-            console.log(timeValue)
+            resultElement.textContent = timeValue
             break;
         case "minutossegundos":
-            console.log(timeValue * 60)
+            resultElement.textContent = timeValue * 60
             break;
         case "minutoshoras":
-            console.log(timeValue / 60)
+            resultElement.textContent = timeValue / 60
             break;
         case "minutosdias":
-            console.log(timeValue / 1440)
+            resultElement.textContent = timeValue / 1440
             break;
-
         case "horashoras":
-            console.log(timeValue)
+            resultElement.textContent = timeValue
             break;
         case "horassegundos":
-            console.log(timeValue * 3600)
+            resultElement.textContent = timeValue * 3600
             break;
         case "horasminutos":
-            console.log(timeValue * 60)
+            resultElement.textContent = timeValue * 60
             break;
         case "horasdias":
-            console.log(timeValue / 24)
+            resultElement.textContent = timeValue / 24
             break;
-
         case "diasdias":
-            console.log(timeValue)
+            resultElement.textContent = timeValue
             break;
         case "diassegundos":
-            console.log(timeValue * 86400)
+            resultElement.textContent = timeValue * 86400
             break;
         case "diasminutos":
-            console.log(timeValue * 1440)
+            resultElement.textContent = timeValue * 1440
             break;
         case "diashoras":
-            console.log(timeValue * 24)
+            resultElement.textContent = timeValue * 24
             break;
 
         default:
