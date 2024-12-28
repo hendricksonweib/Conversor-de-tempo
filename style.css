@@ -37,6 +37,7 @@ section {
 }
 
 .selecao {
+    outline: none;
     background-color: #1F1F1F;
     color: #95BEF8;
     border-radius: 8px;
@@ -57,4 +58,11 @@ input, #result{
 }
 #result{
 background-color: #303134;
+}
+#convert{
+    margin-top: 1rem;
+    padding: 0.7rem 7rem;
+    background-color:#95BEF8;
+    border-style: none;
+    border-radius: 8px;
 }
